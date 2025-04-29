@@ -1,3 +1,5 @@
+# Copilot agent mode: This file was generated and updated by GitHub Copilot agent mode to add test data for the OctoFit Tracker app.
+
 from django.core.management.base import BaseCommand
 from octofit.models import User, Team, Activity, Workout, Leaderboard
 from django.utils import timezone
@@ -19,8 +21,8 @@ class Command(BaseCommand):
         user3 = User.objects.create(email='carol@example.com', name='Carol', password='carolpass')
 
         # Teams
-        team1 = Team.objects.create(name='Team Octopus', members=[user1, user2])
-        team2 = Team.objects.create(name='Team Kraken', members=[user3])
+        team1 = Team.objects.create(name='Team Octopus', members=[user1.email, user2.email])
+        team2 = Team.objects.create(name='Team Kraken', members=[user3.email])
 
         # Activities
         Activity.objects.create(user=user1, activity_type='running', duration=30, date=timezone.now())
