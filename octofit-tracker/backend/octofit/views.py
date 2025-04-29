@@ -43,3 +43,5 @@ def api_root(request, format=None):
         'workouts_local': f'{local_url}/workouts/',
         'leaderboard_local': f'{local_url}/leaderboard/',
     })
+
+# Copilot agent mode: This file was updated by GitHub Copilot agent mode to add the codespace Django REST API endpoint suffix.
