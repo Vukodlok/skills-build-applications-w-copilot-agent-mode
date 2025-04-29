@@ -77,6 +77,7 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# Copilot agent mode: This database configuration was added by GitHub Copilot agent mode to use djongo as the database engine for MongoDB.
 # MongoDB database configuration
 DATABASES = {
     "default": {
