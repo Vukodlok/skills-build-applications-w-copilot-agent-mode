@@ -29,10 +29,17 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    codespace_url = "https://effective-orbit-9w56vvqgw92p96-8000.app.github.dev"
+    local_url = "http://localhost:8000"
     return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activity': '/activity/',
-        'workouts': '/workouts/',
-        'leaderboard': '/leaderboard/',
+        'users': f'{codespace_url}/api/users/',
+        'teams': f'{codespace_url}/api/teams/',
+        'activity': f'{codespace_url}/api/activity/',
+        'workouts': f'{codespace_url}/api/workouts/',
+        'leaderboard': f'{codespace_url}/api/leaderboard/',
+        'users_local': f'{local_url}/api/users/',
+        'teams_local': f'{local_url}/api/teams/',
+        'activity_local': f'{local_url}/api/activity/',
+        'workouts_local': f'{local_url}/api/workouts/',
+        'leaderboard_local': f'{local_url}/api/leaderboard/',
     })
