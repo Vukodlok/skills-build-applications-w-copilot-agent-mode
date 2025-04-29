@@ -30,18 +30,12 @@ class LeaderboardViewSet(viewsets.ModelViewSet):
 @api_view(['GET'])
 def api_root(request, format=None):
     codespace_url = "https://effective-orbit-9w56vvqgw92p96-8000.app.github.dev/api"
-    local_url = "http://localhost:8000/api"
     return Response({
         'users': f'{codespace_url}/users/',
         'teams': f'{codespace_url}/teams/',
         'activity': f'{codespace_url}/activity/',
         'workouts': f'{codespace_url}/workouts/',
         'leaderboard': f'{codespace_url}/leaderboard/',
-        'users_local': f'{local_url}/users/',
-        'teams_local': f'{local_url}/teams/',
-        'activity_local': f'{local_url}/activity/',
-        'workouts_local': f'{local_url}/workouts/',
-        'leaderboard_local': f'{local_url}/leaderboard/',
     })
 
 # Copilot agent mode: This file was updated by GitHub Copilot agent mode to add the codespace Django REST API endpoint suffix.
