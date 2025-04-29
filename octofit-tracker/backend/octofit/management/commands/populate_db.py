@@ -1,3 +1,4 @@
+# Copilot agent mode: This file was generated and updated by GitHub Copilot agent mode to add test data for the OctoFit Tracker app.
 from django.core.management.base import BaseCommand
 from octofit.models import User, Team, Activity, Workout, Leaderboard
 from django.utils import timezone
